@@ -66,7 +66,7 @@ function maquetarPerros(listaPerros) {
             var contenedorPesoPerro = document.createElement('p');
             //Insertar imagen peso
             var contenedorImgPeso = document.createElement('img');
-            contenedorImgPeso.src = './img/weight.svg';
+            contenedorImgPeso.src = 'img/weight.svg';
             contenedorPesoPerro.appendChild(contenedorImgPeso);
             contenedorPesoPerro.classList.add('valores');
             var textoPeso = document.createTextNode(" " + pesoPerro + " kg");
@@ -78,7 +78,7 @@ function maquetarPerros(listaPerros) {
             var contenedorVidaPerro = document.createElement('p');
             //Insertar imagen corazon
             var contenedorImgVida = document.createElement('img');
-            contenedorImgVida.src = './img/heart.svg';
+            contenedorImgVida.src = 'img/heart.svg';
             contenedorVidaPerro.appendChild(contenedorImgVida);
             contenedorVidaPerro.classList.add('valores');
             var textoVida = document.createTextNode(" " + mediaVida + " años");
@@ -134,5 +134,6 @@ function activarFiltros() {
 
 
 iniciar();
+
 
 
