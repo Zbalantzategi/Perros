@@ -1,0 +1,54 @@
+<!---->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiPata</title>
+    <link rel="stylesheet" href="./css/general.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="marca">
+            <button class="logo">
+                <a href="./index.html">
+                    <img src="./img/pata.svg" alt="Pata animal">
+                </a>
+            </button>
+            <h1>WikiPata</h1>
+        </div>
+        <div class="contenedor-busqueda">
+            <img src="./img/corazon.svg" alt="favoritos">
+        </div>
+    </header>
+    <main>
+
+        <!--Grid del perro seleccionado. A completar con JS-->
+        <div id="contenedor" class="grid-perro">
+            <h2 class="nombrePerro"></h2>
+            <div class="contenedorAtributos">
+                <p class="descripcion"></p>
+                <p class="hipoalergenico"></p>
+                <div class="graficos">
+                    <canvas class="vida">
+
+                    </canvas>
+
+                    <canvas class="peso">
+
+                    </canvas>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+            <p>2025 DogPedia. Datos facilitados por DogAPI.</p>
+        </footer>
+    <script src="./js/perro.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+/*Variables*/
+
+$primario: #e67e22;
+$primarioOscuro: #d35400;
+$bg: #fffaf0;
+$texto-oscuro: #2c3e50;
+$blanco: #ffffff;
+$gris: #7f8c8d;
+
+body {
+    font-family: sans-serif;
+    background-color: $bg;
+    color: $texto-oscuro;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/*Encabezado*/
+header {
+    background-color: $blanco;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0; 
+
+}
+
+.marca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: $primario;
+    font-weight: 800;
+}
+
+.logo {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    img {
+        height: 30px;
+        width: auto;
+    }
+}
+
+/*Cotenedor principal*/
+main {
+    margin: 0 auto;
+    width: 100%;
+    flex: 1;
+    margin: 0 20px 0 20px; 
+}
+
+.filtros-seccion {
+    margin-bottom: 3rem;
+    text-align: center;
+
+
+    h2 {
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+        color: $primarioOscuro;
+    }
+}
+
+.filtro-buscador {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    .filtros-contenedor {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+
+        button {
+            border: 1px solid $primarioOscuro;
+            background-color: $primario;
+            padding: 5px;
+            border-radius: 15px;
+            color: $texto-oscuro;
+            cursor: pointer;
+            transition: transform 0.2s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+        }
+    }
+
+    .buscador {
+        input {
+            border: 1px solid $primarioOscuro;
+            background-color: $primario;
+            padding: 5px;
+            border-radius: 15px;
+
+            &::placeholder {
+                color: $texto-oscuro;
+            }
+        }
+    }
+
+
+}
+
+//Clases grid de perros
+.grid-perros {
+    /*display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;*/
+
+    //Div para cada perro 
+    .divPerro {
+        display: flex;
+        gap: 15px;
+        background: $blanco;
+        margin-bottom: 10px;
+        color: $primario;
+        transition: transform 0.2s;
+        align-items: center;
+        margin-left: 10px;
+
+
+        &:hover {
+            transform: scale(1.01);
+        }
+    }
+}
+
+.valores {
+    display: flex;
+        align-items: center;
+        margin-right:  30px;             
+        white-space: nowrap;   
+        flex-shrink: 0;
+    img {
+        max-height: 30px;
+        width: auto;
+        
+    }
+
+}
+
+.graficos {
+    display: flex;
+    justify-content: space-around;
+    max-height: 200px;
+    width: auto;
+    flex-wrap: wrap;
+}
+
+
+
+
+//Footer
+footer {
+    padding: 1rem;
+    background-color: $blanco;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

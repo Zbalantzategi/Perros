@@ -1,0 +1,149 @@
+/*Variables*/
+body {
+  font-family: sans-serif;
+  background-color: #fffaf0;
+  color: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/*Encabezado*/
+header {
+  background-color: #ffffff;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.marca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #e67e22;
+  font-weight: 800;
+}
+
+.logo {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+.logo img {
+  height: 30px;
+  width: auto;
+}
+
+/*Cotenedor principal*/
+main {
+  margin: 0 auto;
+  width: 100%;
+  flex: 1;
+  margin: 0 20px 0 20px;
+}
+
+.filtros-seccion {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.filtros-seccion h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #d35400;
+}
+
+.filtro-buscador {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.filtro-buscador .filtros-contenedor {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.filtro-buscador .filtros-contenedor button {
+  border: 1px solid #d35400;
+  background-color: #e67e22;
+  padding: 5px;
+  border-radius: 15px;
+  color: #2c3e50;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.filtro-buscador .filtros-contenedor button:hover {
+  transform: scale(1.1);
+}
+.filtro-buscador .buscador input {
+  border: 1px solid #d35400;
+  background-color: #e67e22;
+  padding: 5px;
+  border-radius: 15px;
+}
+.filtro-buscador .buscador input::-moz-placeholder {
+  color: #2c3e50;
+}
+.filtro-buscador .buscador input::placeholder {
+  color: #2c3e50;
+}
+
+.grid-perros {
+  /*display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;*/
+}
+.grid-perros .divPerro {
+  display: flex;
+  gap: 15px;
+  background: #ffffff;
+  margin-bottom: 10px;
+  color: #e67e22;
+  transition: transform 0.2s;
+  align-items: center;
+  margin-left: 10px;
+}
+.grid-perros .divPerro:hover {
+  transform: scale(1.01);
+}
+
+.valores {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.valores img {
+  max-height: 30px;
+  width: auto;
+}
+
+.graficos {
+  display: flex;
+  justify-content: space-around;
+  max-height: 200px;
+  width: auto;
+  flex-wrap: wrap;
+}
+
+footer {
+  padding: 1rem;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=general.css.map */
