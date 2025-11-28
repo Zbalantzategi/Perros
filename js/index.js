@@ -78,7 +78,7 @@ function maquetarPerros(listaPerros) {
             var contenedorVidaPerro = document.createElement('p');
             //Insertar imagen corazon
             var contenedorImgVida = document.createElement('img');
-            contenedorImgVida.src = '../../app/img/heart.svg';
+            contenedorImgVida.src = '../img/heart.svg';
             contenedorVidaPerro.appendChild(contenedorImgVida);
             contenedorVidaPerro.classList.add('valores');
             var textoVida = document.createTextNode(" " + mediaVida + " años");
@@ -131,5 +131,6 @@ function activarFiltros() {
     })
 
 }
+
 
 iniciar();
