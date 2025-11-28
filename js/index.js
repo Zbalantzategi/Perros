@@ -66,7 +66,7 @@ function maquetarPerros(listaPerros) {
             var contenedorPesoPerro = document.createElement('p');
             //Insertar imagen peso
             var contenedorImgPeso = document.createElement('img');
-            contenedorImgPeso.src = '../../app/img/weight.svg';
+            contenedorImgPeso.src = './img/weight.svg';
             contenedorPesoPerro.appendChild(contenedorImgPeso);
             contenedorPesoPerro.classList.add('valores');
             var textoPeso = document.createTextNode(" " + pesoPerro + " kg");
@@ -134,4 +134,5 @@ function activarFiltros() {
 
 
 iniciar();
+
 
